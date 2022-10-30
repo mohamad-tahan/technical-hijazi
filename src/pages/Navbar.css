@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  transition: all 200ms ease 0s;
+  align-items: center;
+  height: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  padding-right: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  outline: none;
+  background: transparent;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  height: 100%;
+  padding: 0 7px;
+  display: inline-block;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+}
+
+li a:hover {
+  color: #8a53a8;
+}
+
+li a:focus {
+  color: white;
+}
+
+.logoNav {
+  max-height: inherit;
+  max-width: 40px;
+  max-height: 40px;
+  opacity: 0.5;
+  border-radius: 50%;
+  filter: saturate(4);
+}
+
+.logoNav:hover {
+  cursor: pointer;
+}
+
+.logoNav:hover {
+  animation: rotation 0.5s linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.cover-img {
+  background-image: url(../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.intro,
+.btn {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+}
+.title {
+  color: rgb(2, 2, 145);
+  font-size: 45px;
+  font-weight: bolder;
+  line-height: 120px;
+  text-shadow: 2px 2px 4px #878585;
+  letter-spacing: 5px;
+}
+.info {
+  color: rgb(60, 60, 87);
+  font-size: 30px;
+}
+
+.info:hover {
+  font-size: 33px;
+  transition: 0.5s;
+  margin: 3px 3px;
+  text-shadow: 2px 2px 4px #b7b7b7;
+}
+
+.title:hover {
+  background: linear-gradient(90deg, #0c10ff, #9bdcff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  font-size: 49px;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6361ea, #0f13ff);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background: #9bdcff;
+}
+
+.btn-projects {
+  cursor: pointer;
+  color: rgb(35, 35, 50);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 13px 28px;
+  border: 1px solid #0505ff;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+.btn-projects:hover {
+  background-image: linear-gradient(to right, #70b9f7 0%, #8daaed 70%);
+  color: white;
+  border: 1px solid white;
+  font-size: 14px;
+  background-position: right center;
+}
+.btn {
+  top: 67%;
+}
