@@ -31,3 +31,15 @@
   font-weight: lighter;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 776px) {
+  .footerIcons {
+    font-size: 30px;
+  }
+  .footerText {
+    font-size: 15px;
+  }
+  .footer {
+    min-height: 40px;
+  }
+}

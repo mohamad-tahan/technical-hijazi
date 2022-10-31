@@ -78,3 +78,26 @@ table tr td:first-child {
 table tr td:last-child {
   border-right: none;
 }
+
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 20px;
+  }
+  .subtitle span {
+    font-size: 14px;
+  }
+  .chooseTitle {
+    font-size: 30px;
+  }
+
+  table,
+  td,
+  th {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  td:hover {
+    font-size: 16px;
+  }
+}

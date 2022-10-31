@@ -130,3 +130,32 @@
 .con-text h2 {
   text-align: center;
 }
+
+
+@media screen and (max-width: 768px) {
+  .picsContainer img {
+    width: 100%;
+  }
+  .pic:hover img {
+    transform: scale(1.1);
+  }
+  .pic:hover .con-text p {
+    font-size: 10px;
+  }
+  .picsTitle {
+    font-size: 30px;
+  }
+
+  .viewAll {
+    margin-right: 0px;
+  }
+
+  .viewAll a {
+    font-size: 14px;
+    float: left;
+  }
+
+  .con-text h2 {
+    font-size: 15px;
+  }
+}
